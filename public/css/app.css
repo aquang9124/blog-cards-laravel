@@ -17,4 +17,12 @@ html, body {
 .edit-notes {
   color: #ff7f91; }
 
+.Alert {
+  width: 100%;
+  height: em(50px); }
+
+.Alert--Success {
+  background-color: green;
+  color: white; }
+
 /*# sourceMappingURL=app.css.map */

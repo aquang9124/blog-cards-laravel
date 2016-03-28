@@ -16,6 +16,11 @@
 		<div class="row">
 			<hr>
 			<h2>Add a new note</h2>
+			@if (Session::has('flash_message'))
+				<div class="Alert Alert--{{ ucwords(Session::get('flash_message_level')) }}">
+					{{ Session::get('flash_message') }}
+				</div>
+			@endif
 			<form action="/cards/{{ $card->id }}/notes" method="post">
 				{!! csrf_field() !!}
 				<div class="form-group">

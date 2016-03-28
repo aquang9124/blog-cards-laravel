@@ -19,6 +19,8 @@ class NotesController extends Controller
 		$note->user_id = 1;
 		$card->addNote($note);
 
+		flash('You successfully posted a note!', 'success');
+
 		return back();	
 	}
 
